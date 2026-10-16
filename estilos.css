@@ -1,0 +1,197 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f5f3ff;
+    color: #272344;
+    line-height: 1.7;
+}
+
+/* Portada principal */
+.portada {
+    background: linear-gradient(135deg, #312e81, #7c3aed);
+    color: white;
+    text-align: center;
+    padding: 55px 20px;
+}
+
+.portada h1 {
+    font-size: 38px;
+    margin: 10px 0;
+}
+
+.etiqueta {
+    color: #ddd6fe;
+    font-size: 13px;
+    font-weight: bold;
+    letter-spacing: 3px;
+}
+
+/* Barra de navegación */
+.menu {
+    background-color: #ffffff;
+    text-align: center;
+    padding: 18px;
+    border-bottom: 1px solid #e5e7eb;
+}
+
+.menu a {
+    display: inline-block;
+    color: #5b21b6;
+    text-decoration: none;
+    font-weight: bold;
+    margin: 5px 12px;
+}
+
+.menu a:hover {
+    color: #9333ea;
+    text-decoration: underline;
+}
+
+/* Área de contenido */
+.contenedor {
+    width: 90%;
+    max-width: 1000px;
+    margin: 35px auto;
+}
+
+.introduccion,
+.proceso,
+.conclusion {
+    background-color: white;
+    padding: 25px;
+    border-radius: 16px;
+    margin-bottom: 30px;
+    box-shadow: 0 5px 18px rgba(49, 46, 129, 0.07);
+}
+
+h2 {
+    color: #5b21b6;
+    margin-top: 0;
+}
+
+/* Tarjetas de propiedades */
+.rejilla {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 20px;
+}
+
+.ficha {
+    padding: 24px;
+    border-radius: 14px;
+    border: 1px solid #e5e7eb;
+    transition: transform 0.2s ease;
+}
+
+.ficha:hover {
+    transform: translateY(-4px);
+}
+
+.ficha h3 {
+    margin-bottom: 5px;
+}
+
+.numero {
+    font-size: 13px;
+    font-weight: bold;
+}
+
+.ficha-lila {
+    background-color: #ede9fe;
+}
+
+.ficha-azul {
+    background-color: #dbeafe;
+}
+
+.ficha-verde {
+    background-color: #dcfce7;
+}
+
+.ficha-naranja {
+    background-color: #ffedd5;
+}
+
+/* Ejemplos de código */
+code {
+    display: inline-block;
+    background-color: white;
+    color: #6d28d9;
+    padding: 7px 10px;
+    border-radius: 6px;
+    overflow-wrap: anywhere;
+}
+
+/* Pasos explicativos */
+.paso {
+    display: flex;
+    align-items: flex-start;
+    gap: 15px;
+    margin: 22px 0;
+}
+
+.paso span {
+    background-color: #ede9fe;
+    color: #6d28d9;
+    border-radius: 50%;
+    min-width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+}
+
+.paso h3 {
+    margin: 0;
+}
+
+.paso p {
+    margin-top: 5px;
+}
+
+/* Mensaje final */
+.conclusion {
+    background-color: #312e81;
+    color: white;
+    text-align: center;
+}
+
+.conclusion h2 {
+    color: #ddd6fe;
+}
+
+/* Pie de página */
+footer {
+    background-color: #201d50;
+    color: #e9d5ff;
+    text-align: center;
+    padding: 18px;
+}
+
+/* Adaptación para pantallas pequeñas */
+@media (max-width: 650px) {
+    .portada h1 {
+        font-size: 29px;
+    }
+
+    .rejilla {
+        grid-template-columns: 1fr;
+    }
+
+    .contenedor {
+        width: 94%;
+    }
+
+    .menu a {
+        margin: 5px 8px;
+    }
+}
